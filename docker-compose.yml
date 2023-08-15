@@ -1,0 +1,11 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:12.11
+    environment:
+      POSTGRES_USER: "sa"
+      POSTGRES_PASSWORD: "1q2w3e4r5t"
+      POSTGRES_DB: "development"
+    ports:
+      - "5432:5432"
+
