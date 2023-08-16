@@ -1,14 +1,16 @@
 spring:
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:forum
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/development
     username: sa
-    password:
+    password: "1q2w3e4r5t"
   jpa:
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: create
     show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
         format_sql: true
